@@ -62,3 +62,6 @@ _ReSharper*/
 
 # env file
 .env
+
+#GoogleSheetConfig
+GoogleSheetConfig/Cred/cred.json

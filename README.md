@@ -12,7 +12,7 @@ A Telegram bot that helps users track their daily expenses and manage their fina
 
 ## Usage
 
-1. Start the bot: Search for `@SpendTrackr_bot` on Telegram
+1. Start the bot: Search for your bot name on Telegram
 2. Commands:
     - `/start` - Begin using the bot 
     - `/add amount category note` - Add new expense
@@ -28,10 +28,16 @@ A Telegram bot that helps users track their daily expenses and manage their fina
 - Database (PostgreSQL)
 
 ### Setup
+1. Create bot at Telegram @BotFather first and get the bot token
 1. Clone repository
 2. Add bot token in `.env` file
-3. Run migrations
-4. Build and run project
+3. Put your Credential google service account in GoogleSheetConfig/Cred/cred.json
+4. Run migrations
+5. Build and run project
+
+### Environment Variables
+Create a `.env` file in the root of the project with the following content:
+TELEGRAM_BOT_TOKEN=<Your telegram bot token>
 
 ## Contributing
 
