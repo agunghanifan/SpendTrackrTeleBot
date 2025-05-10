@@ -1,10 +1,10 @@
-using SpendTrackrTeleBot.GoogleSheetConfig;
+using SpendTrackrTeleBot.GoogleSheet;
 
 namespace SpendTrackrTeleBot
 {
     public class MainControl
     {
-        public async Task<string> Run(string? message)
+        public static async Task<string> Run(string? message)
         {
             Console.WriteLine("MainControl is running...");
             // Add your logic here
@@ -20,8 +20,8 @@ namespace SpendTrackrTeleBot
                 {
                     if (IsValidEmail(message))
                     {
-                        GSheetConfig gsheet = new();
-                        string addressGSheet = await gsheet.RunSheet(message);
+                        GSheetController gsheet = new();
+                        string addressGSheet = await GSheetController.RunSheet(message);
                         return addressGSheet;
                     }
                     else

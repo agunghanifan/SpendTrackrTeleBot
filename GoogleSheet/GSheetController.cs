@@ -6,11 +6,11 @@ using Google.Apis.Drive.v3;
 using Google.Apis.Drive.v3.Data;
 using dotenv.net;
 
-namespace SpendTrackrTeleBot.GoogleSheetConfig
+namespace SpendTrackrTeleBot.GoogleSheet
 {
-    public class GSheetConfig
+    public class GSheetController
     {
-        public async Task<string> RunSheet(string email)
+        public static async Task<string> RunSheet(string email)
         {
 
             // Load environment variables
